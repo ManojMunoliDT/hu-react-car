@@ -4,12 +4,13 @@ import leftArrow from "../../assets/images/Unionleft-arrow.png";
 import rightArrow from "../../assets/images/Unionright-arrow.png";
 import { carDetail } from "../../mock";
 import { useHistory } from "react-router-dom";
+import {isEmpty} from "lodash";
 
 function HomeCarousel() {
   const [searchedItem, setSearchedItem] = useState("");
   const history = useHistory();
-
   const handleChange =(event:any) =>{
+    
     setSearchedItem(event?.target?.value);
    }
 
@@ -30,7 +31,7 @@ function HomeCarousel() {
           <div className="middle-section-heading">FIND YOUR DREAM CAR</div>
           <div className="input-container">
             <input type="text" placeholder="Enter car name..." className="search-input" onChange={handleChange} />
-            <button className="search-button" onClick={handleSearch}>SEARCH</button>
+            <button className="search-button" onClick={handleSearch} disabled={isEmpty(searchedItem)}>SEARCH</button>
           </div>
         </div>
         <div className="arrow-container">
