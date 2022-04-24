@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import {  useParams ,useHistory, useLocation} from "react-router-dom";
+import {  useParams ,useHistory } from "react-router-dom";
 import "./show-car.css";
 import { carDetail } from "../../mock";
 import { isEmpty } from "lodash";
@@ -15,23 +15,17 @@ function ShowCar() {
   const [idObject] = useState<IdObject>(useParams());
   const [carDetails, setCarDetails] = useState<any>({});
   const history = useHistory();
-  const location =useLocation();
 
   useEffect(() => {
     fetchCarDetails();
-  }, [idObject,location]);
+  }, [idObject]);
 
-  // const fetchCarDetails = async () => {
-  //   const response = await axios.get(url + `/${idObject.carId}`, { auth });
-  //   setCarDetails(response.data);
-  // };
+ 
   const fetchCarDetails = async () => {
 
     let alteredData = carDetail.filter((carItem: any) => carItem.id === parseInt(idObject.carId))
     alteredData?.length !==0 && setCarDetails(alteredData[0]);
-    console.log(alteredData,"alter");
   };
-  console.log(carDetails,"showcar");
 
   const handleBook=() =>{
     if(carDetails.isBooked)
@@ -162,9 +156,6 @@ function ShowCar() {
       </div>
       </div>
       <div className="book-button-container">
-        {/* <Link to={`/all-cars/booking/${idObject.carId}`}>
-          <button className="book-button">BOOK NOW</button>
-        </Link> */}
         <button className="book-button" onClick={handleBook}>{carDetails?.isBooked ? <span style={{color:"white" , backgroundColor:"green" , padding: "15px 20px"}} >"Booked"</span>:<span style={{color:"white" , backgroundColor:"#790e22" , padding: "15px 20px"}} >"Book Now"</span>}</button>
       </div>
     </div>

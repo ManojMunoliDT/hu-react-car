@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./car-type-selection-bar.css";
 
 interface Categories {
@@ -9,7 +9,6 @@ interface Categories {
 
 function CarTypeSelectionBar({categoryTypes,categories, handleTypeChange= f => f }: Categories) {
   const [categoryType, setCategoryType] = useState(categoryTypes);
-  // const {handleTypeChange} = props;
 
   const selectedCategoryStyles = {
     color: "white",
@@ -20,11 +19,6 @@ function CarTypeSelectionBar({categoryTypes,categories, handleTypeChange= f => f
    setCategoryType(newCategory);
    handleTypeChange(newCategory);
   };
-
-  // useEffect(() => {
-  //   if(props.handleTypeChange)
-  //     props.handleTypeChange(categoryType);
-  // }, [categoryType, props])
 
   return (
     <div className="categories-container">

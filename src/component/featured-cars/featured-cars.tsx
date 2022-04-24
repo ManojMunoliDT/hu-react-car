@@ -20,7 +20,6 @@ interface CarDetail {
 function FeaturedCars() {
   const categories = ["Popular", "Just launched", "Upcoming"];
   const [carDetails, setCarDetails] = useState<CarDetail[]>([]);
-  const [categorie, setcategorie] = useState("");
   const history = useHistory();
   const [masterCarDetails, setMasterCarDetails] = useState<CarDetail[]>([]);
 
@@ -40,7 +39,6 @@ function FeaturedCars() {
     }));
     setCarDetails(alteredData);
     setMasterCarDetails(alteredData);
-    console.log(alteredData,"alterData");
   };
   const handleSeactionClick = (carDetail:any) => {
     history.push(`/all-cars/${carDetail?.id}`)
@@ -50,35 +48,17 @@ function FeaturedCars() {
     let filterDetail =[];
     if(categorie === "Popular") {
       filterDetail= masterCarDetails.filter(data => data.isBooked);
-      console.log(carDetails.filter(data => data.isBooked === true),"filtersssssss");
       setCarDetails(filterDetail);
     } 
     else if(categorie === "Just launched") {
-      console.log(carDetails,"carDeails");
       filterDetail= masterCarDetails.filter(data => moment(data.date).isSameOrBefore(new Date()));
       setCarDetails(filterDetail);
     } else {
       filterDetail= masterCarDetails.filter(data => moment(data.date).isAfter(new Date()));
-      console.log(filterDetail,"filter");
       setCarDetails(filterDetail);
     }
-    console.log(filterDetail,"filterDetail");
-    console.log(categorie,"cate");
     
   };
-
-  // const  getcategorieDetails = () => {
-  //   let filterDetail =[];
-  //   if(categorie === "Popular") {
-  //     filterDetail= carDetails.filter(data => data.isBooked);
-  //   } else if(categorie === "Just launched") {
-  //     filterDetail= carDetails.filter(data => moment(data.date).isSameOrBefore());
-  //   } else {
-  //     filterDetail= carDetails.filter(data => moment(data.date).isAfter());
-  //   }
-  //   console.log(filterDetail,"filterDetail");
-  //   setCarDetails(filterDetail);
-  // };
 
   useEffect(() => {
     if (!isEmpty(masterCarDetails)) handlecategorieChange("Popular");

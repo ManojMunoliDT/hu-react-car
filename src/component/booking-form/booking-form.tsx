@@ -1,14 +1,10 @@
-
 import React, { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import "./booking-form.css";
 import arrow from "../../assets/images/Unionright-arrow.png";
 import { carDetail } from "../../mock";
 
-
-
 const TEL_REGEX = "^([+]\\d{2})?\\d{10}$";
-
 
 interface IdObject {
   carId: string;
@@ -53,20 +49,20 @@ function BookingForm() {
   }, [idObject]);
 
   const fetchCarDetails = async () => {
-    let alteredData = carDetail.filter((carItem: any) => {return carItem.id === parseInt(idObject.carId) } )
-    alteredData?.length !==0 && setCarDetails(alteredData[0]);
+    let alteredData = carDetail.filter((carItem: any) => {
+      return carItem.id === parseInt(idObject.carId);
+    });
+    alteredData?.length !== 0 && setCarDetails(alteredData[0]);
   };
 
-  const handleSubmit = async (event:any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
-    let alteredData = carDetail.filter((carItem: any) => {return carItem.id === parseInt(idObject.carId) } )
-    console.log(alteredData,"book");
-    const newData = {...alteredData[0], isBooked:true}
-    console.log(newData,"newData");
+    let alteredData = carDetail.filter((carItem: any) => {
+      return carItem.id === parseInt(idObject.carId);
+    });
+    const newData = { ...alteredData[0], isBooked: true };
     const alterDataIndex = carDetail.indexOf(alteredData[0]);
-    console.log(alterDataIndex,"alterDataIndex");
     carDetail[alterDataIndex] = newData;
-    console.log(carDetail,"carDeatil");
     history.push(`/all-cars/booking/${idObject.carId}/booking-successful`);
   };
 
@@ -87,15 +83,11 @@ function BookingForm() {
           <div className="car-name">{carDetails.name}</div>
           <div className="detail-container">
             <div className="spec-heading">Fuel Type</div>
-            <div className="spec-detail">
-              {carDetails.fuel_type}
-            </div>
+            <div className="spec-detail">{carDetails.fuel_type}</div>
           </div>
           <div className="detail-container">
             <div className="spec-heading">Engine</div>
-            <div className="spec-detail">
-              {carDetails.engine_cc}
-            </div>
+            <div className="spec-detail">{carDetails.engine_cc}</div>
           </div>
           <div className="view-all-details-container">
             <Link to={`/all-cars/${idObject.carId}`}>
@@ -180,16 +172,13 @@ function BookingForm() {
                 </span>
               </div>
               <div className="submit-button-container">
-                {/* <Link
-                  to={`/all-cars/booking/${idObject.carId}/booking-successful`}
+                <button
+                  disabled={!isFormValid}
+                  className="submit-button"
+                  onClick={handleSubmit}
                 >
-                  <button disabled={!isFormValid} className="submit-button">
-                    SUBMIT
-                  </button>
-                </Link> */}
-                 <button disabled={!isFormValid} className="submit-button" onClick={handleSubmit}>
-                    SUBMIT
-                  </button>
+                  SUBMIT
+                </button>
               </div>
             </form>
           </div>

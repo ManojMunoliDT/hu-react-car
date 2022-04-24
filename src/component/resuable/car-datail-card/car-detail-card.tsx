@@ -1,6 +1,5 @@
 import React from "react";
 import "./car-detail-card.css";
-// import arrow from "../../../assets/images/Unionright-arrow.png";
 
 interface ICarDetailCard {
   name: string;

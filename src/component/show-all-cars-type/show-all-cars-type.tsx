@@ -43,8 +43,6 @@ function ShowAllCarsType() {
   const fetchData = async () => {
     let carDetails:any = [];
     carDetails= isSearchedCarId ? [carDetail?.find(data => data?.id === Number(isSearchedCarId))] : carDetail;
-    console.log(isSearchedCarId,"isSearchedCarId");
-    console.log(carDetails,"carDetails");
     let alteredData = carDetails.map((carItem: any) => {
       return {
         id: carItem.id,
@@ -68,21 +66,17 @@ function ShowAllCarsType() {
 
   let fetchDataBasedOnCarType = async (carType: string) =>
   {
-    console.log(carType);
     
     let alteredData = carDetail.filter((carItem: any) => carItem.carType === carType  )
-    console.log(alteredData);
     setCarDetails(alteredData);
   }
  
   let getCarTypeDetails = async () => {
-    console.log(carType);
     if (carType === "View all") {
      fetchData();
       
     } else  
     {
-      console.log('e');
       fetchDataBasedOnCarType(carType);
     }
     };
