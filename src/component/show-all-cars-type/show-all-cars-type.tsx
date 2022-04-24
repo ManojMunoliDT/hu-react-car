@@ -5,7 +5,7 @@ import "./show-all-cars-type.css";
 import arrow from "../../assets/images/Unionright-arrow.png";
 import rightAngularArrow from "../../assets/images/rightangulararrow.png";
 import leftAngularArrow from "../../assets/images/leftangulararrow.png";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { carDetail } from "../../mock";
 
 interface CarDetail {

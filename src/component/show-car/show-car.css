@@ -57,12 +57,20 @@
 .book-button{
   border: none;
   padding: 15px 20px;
-  background-color: #790e22;
   color: white;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
 
+.interior-color{
+  width:200px;
+  height:100px;
+  background:blue;
+}
 
-
+.exterior-color{
+  width:200px;
+  height:100px;
+  background:blue;
+}

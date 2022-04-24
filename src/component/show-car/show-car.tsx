@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import {  useParams ,useHistory} from "react-router-dom";
+import {  useParams ,useHistory, useLocation} from "react-router-dom";
 import "./show-car.css";
 import { carDetail } from "../../mock";
 
@@ -14,10 +14,11 @@ function ShowCar() {
   const [idObject] = useState<IdObject>(useParams());
   const [carDetails, setCarDetails] = useState<any>({});
   const history = useHistory();
+  const location =useLocation();
 
   useEffect(() => {
     fetchCarDetails();
-  }, [idObject]);
+  }, [idObject,location]);
 
   // const fetchCarDetails = async () => {
   //   const response = await axios.get(url + `/${idObject.carId}`, { auth });
@@ -106,9 +107,8 @@ function ShowCar() {
           </div>
         </div>
         <div className="car-specification-container">
-          <div className="car-specification-heading">
-            Car <b>Specifications</b>
-          </div>
+        {/* <div className="exterior-color" style={{background:carDetails.color[1]}}></div> */}
+
           <div className="car-specification">
             <div className="detail-container">
               <div className="spec-heading">exteriors</div>
@@ -152,11 +152,20 @@ function ShowCar() {
           </div>
         </div>
       </div>
+      <div className="car-detail">
+      <div className="car-heading-image-container">
+        </div>
+      <div className="car-specification-container">
+      <div className="car-specification-heading">
+            <b>Cost :  {carDetails.price}</b>
+          </div>
+      </div>
+      </div>
       <div className="book-button-container">
         {/* <Link to={`/all-cars/booking/${idObject.carId}`}>
           <button className="book-button">BOOK NOW</button>
         </Link> */}
-        <button className="book-button" onClick={handleBook}>{carDetails?.isBooked ? <span style={{color:"white" , backgroundColor:"green"}} >"Booked"</span>:"Book Now"}</button>
+        <button className="book-button" onClick={handleBook}>{carDetails?.isBooked ? <span style={{color:"white" , backgroundColor:"green" , padding: "15px 20px"}} >"Booked"</span>:<span style={{color:"white" , backgroundColor:"#790e22" , padding: "15px 20px"}} >"Book Now"</span>}</button>
       </div>
     </div>
   );
