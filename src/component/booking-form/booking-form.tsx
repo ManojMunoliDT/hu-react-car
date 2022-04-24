@@ -80,7 +80,7 @@ function BookingForm() {
           <div className="image-container">
             <img
               className="car-image"
-              src={carDetails.imageInteriors}
+              src={carDetails.image}
               alt="car images"
             />
           </div>

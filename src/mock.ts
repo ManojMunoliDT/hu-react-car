@@ -17,7 +17,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -46,7 +46,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -75,7 +75,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -104,7 +104,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -133,7 +133,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper. BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -162,7 +162,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -191,7 +191,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
@@ -220,7 +220,7 @@ export const carDetail = [
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
-      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
+      "This hatchback measures 4,922mm in length and has a 2,975mm wheelbase. Besides, BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.  BMW has given it a one-piece kidney grille with flashy chrome trimming and large air inlets in the front bumper.",
     interiors: [
       "X5 has a high-end cockpit Vernasca leather upholstery for the seats",
       "A panoramic sunroof",
