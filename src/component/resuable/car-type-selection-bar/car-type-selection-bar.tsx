@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./car-type-selection-bar.css";
 
 interface Categories {
-  categoryType: string;
+  categoryTypes: string;
   categories: string[];
   handleTypeChange?: (carType: string) => void;
 }
 
-function CarTypeSelectionBar(props: Categories) {
-  const [categoryType, setCategoryType] = useState(props.categoryType);
+function CarTypeSelectionBar({categoryTypes,categories, handleTypeChange= f => f }: Categories) {
+  const [categoryType, setCategoryType] = useState(categoryTypes);
+  // const {handleTypeChange} = props;
 
   const selectedCategoryStyles = {
     color: "white",
@@ -16,20 +17,21 @@ function CarTypeSelectionBar(props: Categories) {
   };
 
   let changeCategoryType = (newCategory: string) => {
-    setCategoryType(newCategory);
+   setCategoryType(newCategory);
+   handleTypeChange(newCategory);
   };
 
-  useEffect(() => {
-    if(props.handleTypeChange)
-      props.handleTypeChange(categoryType);
-  }, [categoryType, props])
+  // useEffect(() => {
+  //   if(props.handleTypeChange)
+  //     props.handleTypeChange(categoryType);
+  // }, [categoryType, props])
 
   return (
     <div className="categories-container">
-      {props.categories.map((category, index) => {
+      {categories.map((category, index) => {
         return (
           <span
-            onClick={() => {changeCategoryType(category)}}
+            onClick={() => changeCategoryType(category)}
             key={index}
             style={categoryType === category ? selectedCategoryStyles : {}}
             className="category"

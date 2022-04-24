@@ -12,6 +12,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '18-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -40,6 +41,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '19-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -68,7 +70,8 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
-    isBooked: false,
+    date: '21-Apr-2022',
+    isBooked: true,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
     exteriors:
@@ -96,6 +99,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '27-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -124,6 +128,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '28-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -152,6 +157,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '29-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -180,6 +186,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '27-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",
@@ -208,6 +215,7 @@ export const carDetail = [
     torque: "450 to 620 Nm",
     acceleration: "5.5 to 6.5 seconds",
     top_speed: "230 to 243 kmph",
+    date: '20-Apr-2022',
     isBooked: false,
     variant:
       "The BMW i Series is available in 2 Automatic Diesel variants and in a single Automatic Petrol variant : Petrol : X3 xDrive 30i Luxury Line Diesel : X3 xDrive 20d xLine and X3 xDrive 20d Luxury Line",

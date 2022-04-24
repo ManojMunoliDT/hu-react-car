@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import {  useParams ,useHistory, useLocation} from "react-router-dom";
 import "./show-car.css";
 import { carDetail } from "../../mock";
+import { isEmpty } from "lodash";
 
 
 
@@ -30,6 +31,7 @@ function ShowCar() {
     alteredData?.length !==0 && setCarDetails(alteredData[0]);
     console.log(alteredData,"alter");
   };
+  console.log(carDetails,"showcar");
 
   const handleBook=() =>{
     if(carDetails.isBooked)
@@ -107,7 +109,7 @@ function ShowCar() {
           </div>
         </div>
         <div className="car-specification-container">
-        {/* <div className="exterior-color" style={{background:carDetails.color[1]}}></div> */}
+        <div className="exterior-color" style={{background: isEmpty(carDetails)? "white" : carDetails.color[0]}}></div>
 
           <div className="car-specification">
             <div className="detail-container">
@@ -130,9 +132,7 @@ function ShowCar() {
           </div>
         </div>
         <div className="car-specification-container">
-          <div className="car-specification-heading">
-            Car <b>Specifications</b>
-          </div>
+        <div className="exterior-color" style={{background: isEmpty(carDetails)? "white" : carDetails.color[1]}}></div>
           <div className="car-specification">
             <div className="detail-container">
               <div className="spec-heading">Interiors</div>

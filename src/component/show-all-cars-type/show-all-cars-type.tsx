@@ -107,7 +107,7 @@ function ShowAllCarsType() {
           <CarTypeSelectionBar
             handleTypeChange={handleCarTypeChange}
             categories={carTypes}
-            categoryType={carTypes[0]}
+            categoryTypes={carTypes[0]}
           />
         </div>}
         <div className="total-count-container">
