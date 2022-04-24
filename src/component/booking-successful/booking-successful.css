@@ -1,0 +1,71 @@
+.booking-successful-container{
+  margin: 0;
+  padding: 0;
+}
+
+.booking-successful{
+  background-color: #f5f5f5;
+  padding: 0 48px 60px;
+}
+
+.booking-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1px solid gray;
+  padding: 62px 0;
+  margin-bottom: 67px;
+}
+
+.booking-successful .image-container{
+  margin: 0;
+  padding: 0;
+}
+
+.booking-message{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.download-message{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.download-message span{
+  text-decoration: underline;
+  color: gray;
+}
+
+.big-image-black-box-container{
+  display: flex;
+}
+
+.big-image-container{
+  flex: 7;
+  height: 600px;
+}
+
+.big-image-container .large-car{
+  width: 815px;
+  height: 100%;
+}
+
+.black-box{
+  flex: 3;
+  background-color: black;
+  padding: 109px 62px;
+}
+
+.border-box{
+  height: 100%;
+  border: 0.1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+
+

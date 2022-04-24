@@ -1,0 +1,36 @@
+.cars-container{
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cars-container .car-card{
+  border: 0.1px solid grey;
+}
+
+.cars-container .car-detail-container{
+  padding: 12px 10px;
+}
+
+.cars-container .car-title{
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.cars-container .price-logo-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cars-container .arrow{
+  color: black;
+  width: 40px;
+  margin-left: 5px;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.cars-container .arrow-logo{
+  width: 35px;
+  margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.footer{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 0 50px;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-item-title{
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.details{
+  font-size: 18px;
+}
+
+.sub-detail:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.social-media-logo{
+  height: 40px;
+}

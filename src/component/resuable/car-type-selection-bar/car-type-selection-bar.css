@@ -1,0 +1,11 @@
+.categories-container{
+  padding: 5px;
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.categories-container .category{
+  padding: 10px 20px;
+  color: #705959;
+  cursor: pointer;
+}

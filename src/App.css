@@ -1,0 +1,11 @@
+*{
+  font-family: Montserrat;
+}
+.padded-container{
+  padding: 0 100px;
+  background-color: #000;
+}
+
+.bottom-footer-plain-bar{
+  height: 60px;
+}

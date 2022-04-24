@@ -1,0 +1,140 @@
+.booking-page-container{
+  margin: 0;
+  padding: 0;
+}
+
+.booking-page{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 50px 77px;
+}
+
+.booking-page-container .car-details{
+  flex: 1;
+  padding: 40px 60px 40px 26px;
+  background-color: #f5f5f5;
+  margin-right: 50px;
+}
+
+.car-details-heading{
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.image-container{
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.image-container .car-image{
+  width: 132px;
+  height: 100px;
+}
+
+.car-name{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.booking-page-container .detail-container{
+  margin-bottom: 18px;
+}
+
+.booking-page-container .spec-heading{
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.booking-page-container .spec-detail{
+  font-size: 18px;
+}
+
+.view-all-details-container{
+  margin-top: 24px;
+}
+
+.view-all-details-container a{
+  text-decoration: none;
+}
+
+.view-all-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.view-all-details-container .arrow{
+  width: 30px;
+}
+
+.booking-form-container{
+  flex: 5;
+  padding: 40px 60px 40px 26px;
+  background-color: #f5f5f5;
+}
+
+.form-heading{
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.field-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.field-label{
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: gray;
+}
+
+.field{
+  padding: 5px 9px;
+  width: 40%;
+  font-size: 15px;
+}
+
+.agreement-container{
+  margin-bottom: 10px;
+}
+
+
+.agreement-box-label{
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.conditon-heading{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.condition{
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.submit-button-container{
+  margin-top: 90px;
+}
+
+.submit-button{
+  border: none;
+  padding: 15px 20px;
+  background-color: #790e22;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+}

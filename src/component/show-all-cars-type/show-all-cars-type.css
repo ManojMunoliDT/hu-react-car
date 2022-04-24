@@ -1,0 +1,83 @@
+.all-car-types-container{
+  margin: 0;
+  padding: 0;
+}
+
+.all-car-types{
+  padding: 53px 47px;
+  color: black;
+  background-color: white;
+}
+
+.total-count-container{
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.cars-container{
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.car-card{
+  border: 0.1px solid grey;
+  margin-top: 20px;
+}
+
+.car-card .car-detail-container{
+  padding: 0 10px 7px;
+}
+
+.cars-container .car-image{
+  height: 417px;
+  width: 270px;
+}
+
+.car-title{
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.price-logo-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-logo{
+  width: 35px;
+  margin-right: 10px;
+}
+
+.arrow{
+    color: black;
+    width: 40px;
+    margin-left: 5px;
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+  }
+
+.error-message{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.prev-next-cars-container{
+  padding: 30px 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.prev-next-cars{
+  display: flex;
+}
+
+.prev-next-cars-container .arrow-container{
+  border: 0.1px solid gray;
+  padding: 16px;
+  text-align: center;
+}
+
+.prev-next-cars-container .arrow-container:first-child{
+  margin-right: 5px;
+}

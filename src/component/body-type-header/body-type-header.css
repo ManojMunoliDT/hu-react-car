@@ -1,0 +1,24 @@
+.body-type-header-container{
+  margin: 0;
+  padding: 0;
+}
+
+.body-type-header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  background-color: rgb(89,82,82);
+}
+
+.body-detail{
+  width: 54%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 4px solid;
+}
+
+.body-heading{
+  font-size: 12px;
+  padding-top: 4px;
+}

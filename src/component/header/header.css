@@ -1,0 +1,29 @@
+.header-container{
+  margin: 0;
+  padding: 0 40px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item{
+  color: white;
+  font-size: 25px;
+  padding: 23px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo{
+  cursor: pointer;
+}
+
+.sub-item:first-child{
+  margin-right: 25px;
+}
+
+.sub-item:last-child{
+  margin-left: 25px;
+}
