@@ -125,7 +125,7 @@ function ShowCar() {
         <div className="car-heading-image-container">
           <div className="car-image-container">
             <img
-              src={carDetails.image}
+              src={carDetails.imageInteriors}
               alt="car-images"
               className="car-image"
             />
