@@ -5,7 +5,7 @@ import "./show-all-cars-type.css";
 import arrow from "../../assets/images/Unionright-arrow.png";
 import rightAngularArrow from "../../assets/images/rightangulararrow.png";
 import leftAngularArrow from "../../assets/images/leftangulararrow.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { carDetail } from "../../mock";
 
 interface CarDetail {
@@ -27,19 +27,25 @@ interface CarDetail {
 
 
 const carTypes = ["View all", "sedan", "suv", "hatchback", "coupe"];
-console.log(carDetail);
+
 function ShowAllCarsType() {
+
+  const param = new URLSearchParams(window.location.search);
+  const isSearchedCarId = param?.get("searchedCarNameId");
   const [carType, setCarType] = useState("");
-  //const [carTypeDetails, setCarTypeDetails] = useState<CarDetail[]>([]);
   const [carTypeDetails, setCarDetails] = useState<CarDetail[]>([]);
+  const history = useHistory();
 
   let handleCarTypeChange = async (carType: string) => {
     setCarType(carType);
   };
 
   const fetchData = async () => {
-   
-    let alteredData = carDetail.map((carItem: any) => {
+    let carDetails:any = [];
+    carDetails= isSearchedCarId ? [carDetail?.find(data => data?.id === Number(isSearchedCarId))] : carDetail;
+    console.log(isSearchedCarId,"isSearchedCarId");
+    console.log(carDetails,"carDetails");
+    let alteredData = carDetails.map((carItem: any) => {
       return {
         id: carItem.id,
         carType: carItem.carType,
@@ -81,7 +87,9 @@ function ShowAllCarsType() {
     }
     };
 
-   
+    const handleSeactionClick = (carDetail:any) => {
+      history.push(`/all-cars/${carDetail?.id}`)
+     }
         
 
   useEffect(() => {
@@ -95,21 +103,23 @@ function ShowAllCarsType() {
   return (
     <div className="all-car-types-container">
       <div className="all-car-types">
-        <div className="selection-bar-container">
+       { !isSearchedCarId && <div className="selection-bar-container">
           <CarTypeSelectionBar
             handleTypeChange={handleCarTypeChange}
             categories={carTypes}
             categoryType={carTypes[0]}
           />
-        </div>
+        </div>}
         <div className="total-count-container">
           <div className="total-count">
             {carTypeDetails.length} total results
           </div>
         </div>
+        
         <div className="cars-container">
           {carTypeDetails.map((carDetail: any) => {
             return (
+              <div onClick={() => handleSeactionClick(carDetail)}>
               <div key={carDetail.id} className="car-card">
                 <div className="car-image-container">
                   <img
@@ -123,20 +133,21 @@ function ShowAllCarsType() {
                     <b>{carDetail.name}</b>
                   </div>
                   <div className="price-logo-container">
-                    <span className="price">{carDetail.price}</span>
-                    <Link to={`/all-cars/${carDetail.id}`}>
+                    <span className="price">{carDetail.price} onwards</span>
                       <img
                         src={arrow}
                         alt="arrow"
                         className="arrow arrow-logo"
                       />
-                    </Link>
+                   
                   </div>
                 </div>
+              </div>
               </div>
             );
           })}
         </div>
+        
         <div
           style={
             carTypeDetails.length !== 0

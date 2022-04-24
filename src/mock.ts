@@ -2,7 +2,7 @@ export const carDetail = [
   {
     id: 1,
     carType: "hatchback",
-    image: "https://c.pxhere.com/photos/aa/01/bmw_vehicle_pkw_dare_auto_x3_automotive_suv-1411420.jpg!d",
+    image:  require("./assets/images/BMWX3.png"),
     imageInteriors: "",
     name: "BMW i Series",
     price: "69.9 Lakhs",
@@ -56,7 +56,7 @@ export const carDetail = [
   {
     id: 3,
     carType: "sedan",
-    image: "ghj",
+    image:  require("./assets/images/BMWX6.png"),
     imageInteriors: "shf",
     name: "BMW M340i xDrive",
     price: "85.5 Lakhs",
@@ -83,7 +83,7 @@ export const carDetail = [
   {
     id: 4,
     carType: "coupe",
-    image:"https://cdn.bmwblog.com/wp-content/uploads/2017/02/2017-BMW-5er-Touring-G31-Wallpaper-1920x1200-01.jpg",
+    image: require("./assets/images/BMWX7.png"),
     imageInteriors: "",
     name: "BMW 4 series",
     price: "90.5 Lakhs",
@@ -110,7 +110,7 @@ export const carDetail = [
   {
     id: 5,
     carType: "suv",
-    image: "",
+    image: require("./assets/images/audi1.jpg"),
     imageInteriors: "",
     name: "Audi A4",
     price: "42.5 Lakhs",
@@ -137,7 +137,7 @@ export const carDetail = [
   {
     id: 6,
     carType: "sedan",
-    image: "abc",
+    image: require("./assets/images/audi2.jpg"),
     imageInteriors: "drf",
     name: "Audi S3",
     price: "55.5 Lakhs",
@@ -164,7 +164,7 @@ export const carDetail = [
   {
     id: 7,
     carType: "hatchback",
-    image: "",
+    image: require("./assets/images/audi3.jpg"),
     imageInteriors: "",
     name: "Audi A3",
     price: "80.5 Lakhs",
@@ -191,7 +191,7 @@ export const carDetail = [
   {
     id: 8,
     carType: "coupe",
-    image: "",
+    image: require("./assets/images/audi7.jpg"),
     imageInteriors: "",
     name: "Audi 5000S",
     price: "90.5 Lakhs",
