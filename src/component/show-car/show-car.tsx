@@ -156,7 +156,7 @@ function ShowCar() {
       </div>
       </div>
       <div className="book-button-container">
-        <button className="book-button" onClick={handleBook}>{carDetails?.isBooked ? <span style={{color:"white" , backgroundColor:"green" , padding: "15px 20px"}} >"Booked"</span>:<span style={{color:"white" , backgroundColor:"#790e22" , padding: "15px 20px"}} >"Book Now"</span>}</button>
+        <button className="book-button" onClick={handleBook}>{carDetails?.isBooked ? <span style={{color:"white" , backgroundColor:"green" , padding: "15px 20px" , marginRight: "20px"}} >Booked</span>:<span style={{color:"white" , backgroundColor:"#790e22" , padding: "15px 20px"}} >Book Now</span>}</button>
       </div>
     </div>
   );
